@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #111111;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100vw;
+    height: fit-content;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    margin: 20px 35px;
+    background-image: url("../imgs/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 100px;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+.perfils {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.perfils a {
+    color: #fff;
+}
+
+.perfil {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.perfil:hover {
+    border-color: #eee;
+}
+
+.perfil span {
+    position: absolute;
+    bottom: -30px;
+}
+
+#perfil-1 {
+    background-image: url("https://i.pinimg.com/736x/07/a9/10/07a910ec7cd2a67c3dcf8209439f53ae.jpg");
+}
+
+#perfil-2 {
+    background-image: url("https://i.pinimg.com/564x/db/8e/03/db8e03310a468cb7916ee4185a1390c5.jpg");
+}
+
+#perfil-3 {
+    background-image: url("https://i.pinimg.com/564x/2c/ec/95/2cec956e5187bfd57245a9aac55f4b4e.jpg");
+}
+
+#perfil-4 {
+    background-image: url("https://i.pinimg.com/564x/c3/3c/df/c33cdf500d7be00ab0d35dad998cfd65.jpg");
+}
+
+#perfil-5 {
+    background-image: url("https://i.pinimg.com/564x/5c/07/12/5c0712deb23752b727b59b4a7024d134.jpg");
+}
+
+@media (max-width: 1200px) {
+    .perfil {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 830px) {
+    .perfils {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    .perfil {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+        white-space: nowrap;
+        text-overflow: ellipsis; 
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 50px;
+    }
+
+    main h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+}

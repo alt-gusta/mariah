@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+}
+
+body {
+    background-color: #111111;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+header ul li {
+    cursor: pointer;
+}
+
+.perfil {
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.perfil img {
+    width: 20px;
+}
+
+.esquerda {
+    width: 50vw;
+    height: calc(100vh - 90px);
+    padding: 20px 35px;
+}
+
+.info {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.info .classificacao {
+    background-color: limegreen;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.info .estrelinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .estrelinha img {
+    width: 13px;
+    height: 13px;
+}
+
+.logo {
+    background-image: url("../imgs/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+}
+
+.titulo {
+    margin: 20px 0;
+    margin: 0 0 40px 0;
+}
+
+.titulo h1 {
+    font-family: "Parisienne", cursive;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.btns {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 400px;
+}
+
+.btns * {
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btns img {
+    width: 36px;
+}
+
+.btns .assistir {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btns .minha-lista {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.textos .titulo, .textos p {
+    position: relative;
+}
+
+.foto1 {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 50vw;
+    height: calc(100vh - 150px);
+    background-color: hsl(0, 0%, 7%);
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.foto1 .bb {
+    width: 90%;
+    height: 100%;
+    background-image: url("../imgs/ft1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: #111111;
+}
+
+@media (max-width: 930px) {
+    .perfil * {
+        display: none;
+    }
+    .perfil {
+        padding: 0;
+        width: 25px;
+        height: 25px;
+        background-image: url("../imgs/menu.png");
+        background-size: cover;
+        transform: translateX(-20px);
+    }
+}
+
+@media (max-width: 850px) {
+    .esquerda {
+        width: 100vw;
+    }
+
+    .info {
+        margin-top: 190px;
+    }
+
+    .foto1 {
+        position: absolute;
+        top: 120px;
+        left: 35px;
+        width: calc(100vw - 35px - 35px);
+        height: 300px;
+        background-color: hsl(0, 0%, 7%);
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+    }
+    
+    .foto1::after {
+        content: "";
+        width: calc(100vw - 35px - 35px);
+        height: 300px;
+        position: absolute;
+        background-image: linear-gradient(
+      0deg,
+      #111 0%,
+      #111111 13%,
+      #111111d5 26%,
+      #1111114d 38%,
+      #11111100 49%,
+      #ffffff00 60%,
+      #ffffff00 70%,
+      #ffffff00 80%,
+      #ffffff00 89%,
+      rgba(255, 255, 255, 0) 100%
+    );
+        z-index: 2;
+    }
+}
+
+@media (max-width: 725px) {
+    nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .info {
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .foto1::after {
+        background-image: linear-gradient(transparent);
+    }
+}
