@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
         playAudio();
         setTimeout(() => {
             hideLoadingScreen();
-        }, 1500);
+        }, 1000);
     });
 });
