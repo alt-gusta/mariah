@@ -8,10 +8,13 @@
     z-index: 1;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #111111;
     color: white;
-    overflow-x: hidden;
 }
 
 header {
@@ -227,5 +230,11 @@ header ul li {
 
     .foto1::after {
         background-image: linear-gradient(transparent);
+    }
+}
+
+@media (max-width: 360px) {
+    .esquerda {
+        padding: 20px;
     }
 }
