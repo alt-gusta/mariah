@@ -8,7 +8,7 @@
     z-index: 1;
 }
 
-html, body {
+html {
     overflow-x: hidden;
 }
 
@@ -33,16 +33,17 @@ header ul li {
     cursor: pointer;
 }
 
-.perfil {
+.menu-perfil {
     position: absolute;
     right: 0;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     width: 200px;
+    cursor: pointer;
 }
 
-.perfil img {
+.menu-perfil img {
     width: 20px;
 }
 
@@ -95,6 +96,7 @@ header ul li {
     font-family: "Parisienne", cursive;
     font-size: 40px;
     line-height: 30px;
+    text-shadow: 4px 0px #111;
 }
 
 .btns {
@@ -131,6 +133,10 @@ header ul li {
     color: white;
 }
 
+.parecidos {
+    margin-top: 20px;
+}
+
 .textos .titulo, .textos p {
     position: relative;
 }
@@ -138,8 +144,8 @@ header ul li {
 .foto1 {
     position: absolute;
     top: 120px;
-    right: 0;
-    width: 50vw;
+    right: 20px;
+    width: calc(50vw - 20px);
     height: calc(100vh - 150px);
     background-color: hsl(0, 0%, 7%);
     display: flex;
@@ -154,6 +160,20 @@ header ul li {
     background-size: cover;
     background-position: center center;
     background-color: #111111;
+}
+
+.foto1 .bb.a {
+    background-image: url(../imgs/ft2.jpg);
+}
+
+.foto1 .bb.b {
+    background-image: url(../imgs/ft3.jpg);
+    background-position: top;
+}
+
+.foto1 .bb.c {
+    background-image: url(../imgs/ft4.jpg);
+    background-position: center right;
 }
 
 #loading-screen {
@@ -177,16 +197,69 @@ header ul li {
     animation: spin 2s linear infinite;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards a {
+    margin-top: 10px;
+    color: white;
+}
+
+.perfil {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.perfil:hover {
+    border-color: #eee;
+}
+
+.perfil span {
+    position: absolute;
+    bottom: -50px;
+}
+
+#perfil-1 {
+    background-image: url("https://i.pinimg.com/736x/07/a9/10/07a910ec7cd2a67c3dcf8209439f53ae.jpg");
+}
+
+#perfil-2 {
+    background-image: url("https://i.pinimg.com/564x/db/8e/03/db8e03310a468cb7916ee4185a1390c5.jpg");
+}
+
+#perfil-3 {
+    background-image: url("https://i.pinimg.com/564x/2c/ec/95/2cec956e5187bfd57245a9aac55f4b4e.jpg");
+}
+
+#perfil-4 {
+    background-image: url("https://i.pinimg.com/564x/c3/3c/df/c33cdf500d7be00ab0d35dad998cfd65.jpg");
+}
+
+#perfil-5 {
+    background-image: url("https://i.pinimg.com/564x/5c/07/12/5c0712deb23752b727b59b4a7024d134.jpg");
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
 @media (max-width: 930px) {
-    .perfil * {
+    .menu-perfil * {
         display: none;
     }
-    .perfil {
+    .menu-perfil {
         padding: 0;
         width: 25px;
         height: 25px;

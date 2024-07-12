@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/pages.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="../js/script.js" defer></script>
 </head>
+
 <body>
 
     <div id="loading-screen">
-        <h4>Para a nossa sem pâncreas favorita</h4>
         <div class="spinner"></div>
-        <p>Carregando...</p>
+        <p>Para a nossa sem pâncreas favorita</p>
+    </div>
     </div>
     <div id="main-content" style="display:none;">
-        <audio src="../sound/nouveau-jingle-netflix.mp3" ></audio>
+        <audio src="../sound/nouveau-jingle-netflix.mp3"></audio>
         <header>
-            <div class="logo"></div>
+            <a href="../index.html">
+                <div class="logo"></div>
+            </a>
             <nav>
                 <ul>
                     <li>Início</li>
@@ -27,7 +32,7 @@
                     <li>Minha Lista</li>
                 </ul>
             </nav>
-            <div class="perfil">
+            <div class="menu-perfil">
                 <span class="lupa"><img src="../imgs/lupa.png" alt=""></span>
                 <span class="sino"><img src="../imgs/sino.png" alt=""></span>
                 <span class="foto"></span>
@@ -63,8 +68,9 @@
                             </div>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati officiis culpa ab doloribus tempora praesentium dicta, dolorem qui tempore ullam vero nobis assumenda. Provident numquam dolorem deserunt qui officia!
-                            In sed beatae blanditiis ea accusamus, pariatur neque officia repudiandae unde quo aperiam quaerat corrupti, voluptatem dolore velit amet tempore laboriosam consectetur, quae sunt minima! Perferendis odit esse est porro.
+                            Assim como a Mulher Maravilha, Mariah, uma jovem senhora, enfrenta desafios com coragem e
+                            determinação, ela é uma guerreira imbatível que supera tudo com força e graça. Mesmo não
+                            tendo um pâncreas funcional.
                         </p>
                     </div>
                 </div>
@@ -83,8 +89,34 @@
                     </button>
                 </div>
                 <div style="height: 20px; width: 100vw;"></div>
+                <div class="parecidos">
+                    <h3>Parecidos com este</h3>
+                    <div class="cards">
+                        <a href="../pages/flash.html">
+                            <div class="perfil" id="perfil-2">
+                                <span>Flash</span>
+                            </div>
+                        </a>
+                        <a href="../pages/lanterna-verde.html">
+                            <div class="perfil" id="perfil-3">
+                                <span>Lanterna Verde</span>
+                            </div>
+                        </a>
+                        <a href="../pages/super-homen.html">
+                            <div class="perfil" id="perfil-4">
+                                <span>Super-Homem</span>
+                            </div>
+                        </a>
+                        <a href="../pages/batman.html">
+                            <div class="perfil" id="perfil-5">
+                                <span>Batman</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
 </body>
+
 </html>

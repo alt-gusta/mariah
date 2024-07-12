@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve();
-            }, 2500);
+            }, 1000);
         });
     }
 
