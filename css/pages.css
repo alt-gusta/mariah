@@ -148,7 +148,7 @@ header ul li {
 
 .foto1 {
     position: absolute;
-    top: 120px;
+    top: 0;
     right: 20px;
     width: calc(50vw - 20px);
     height: calc(100vh - 150px);
