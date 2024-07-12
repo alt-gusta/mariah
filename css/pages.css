@@ -211,7 +211,7 @@ header ul li {
     flex-wrap: wrap;
     gap: 25px;
     width: fit-content;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .cards a {
