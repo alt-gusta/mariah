@@ -293,11 +293,10 @@ header ul li {
 
     .foto1 {
         position: absolute;
-        top: 120px;
+        top: 100px;
         left: 35px;
         width: calc(100vw - 35px - 35px);
         height: 300px;
-        background-color: hsl(0, 0%, 7%);
         display: flex;
         justify-content: center;
         z-index: 0;
