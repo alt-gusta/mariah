@@ -8,13 +8,17 @@
     z-index: 1;
 }
 
-html {
+html, body {
     overflow-x: hidden;
 }
 
 body {
     background-color: #111111;
     color: white;
+}
+
+main {
+    position: relative;
 }
 
 header {
