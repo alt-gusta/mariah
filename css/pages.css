@@ -176,6 +176,10 @@ header ul li {
     background-position: center right;
 }
 
+.foto1 .bb.d {
+    background-image: url(../imgs/ft5.jpg);
+}
+
 #loading-screen {
     position: fixed;
     width: 100%;
