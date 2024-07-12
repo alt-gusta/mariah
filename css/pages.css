@@ -208,8 +208,9 @@ header ul li {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     width: fit-content;
+    padding-bottom: 30px;
 }
 
 .cards a {
@@ -236,7 +237,9 @@ header ul li {
 
 .perfil span {
     position: absolute;
-    bottom: -50px;
+    margin-top: 110px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #perfil-1 {
@@ -344,7 +347,7 @@ header ul li {
 @media (max-width: 530px) {
     .cards {
         margin: auto;
-        width: 220px;
+        width: 225px;
     }
 }
 
